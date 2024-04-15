@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: none;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    background-color: #cbc895;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    font-size: 20px;
+}
+
+.ul_nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.a_nav {
+    text-decoration: none;
+    color: #425227;
+    transition: 0.8s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: white;
+    color: #cbc895;
+    scale: 1.2;
+    box-shadow: inset 5em 3em #425227;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    height: 750px;
+}
+
+.sobre_section {
+    background-image: url(https://media.discordapp.net/attachments/843168555360583711/1229233918709071882/Coffee-Beans-PNG-File.png?ex=662ef04c&is=661c7b4c&hm=01916d16efd95bdcc442b1f9171a43ec5ac979a2e1af0c3fda9e82bf826f048e&=&format=webp&quality=lossless&width=550&height=269);
+    background-repeat: repeat-x;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre_div {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.sobre_p {
+    padding: 3%;
+    text-align: justify;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0px 10px 20px black;
+    border-radius: 0px 0px 14px 14px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.sobre_p:hover {
+    background-color: #5d693c;
+    color: white;
+    box-shadow: none;
+}
+
+.body_produtos {
+    background-color: #425227;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.h1_produtos {
+    color: white;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: xx-large;
+    transition: 0.8s;
+    border-radius: 12px;
+}
+
+.h1_produtos:hover {
+    background-color: white;
+    box-shadow: inset 30rem 10rem #cbc895,
+        6px 6px 20px;
+    color: black;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 400px;
+    position: relative;
+    background-color: #cbc895;
+    border-radius: 12px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.card:hover {
+    width: 800px;
+    height: 400px;
+}
+
+.card .img_box {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 0px;
+    transition: 0.5s;
+}
+
+.card:hover .img_box {
+    left: -100px;
+    scale: 0.7;
+}
+
+.card .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    left: 150px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .card_content {
+    /* top: 130px; */
+    left: 200px;
+    height: 250px;
+    width: 500px;
+}
+
+.card_content p {
+    font-size: 20px;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #798052;
+    box-shadow: 0px -1px 10px black;
+    color: white;
+}
+
+.rodape_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+    align-items: baseline;
+}
+
+/* .rodape_contacts {
+    padding-bottom: 10px;
+} */
+
+.apoio_logo {
+    padding: 5px;
+    margin-top: 15px;
+    height: 60px;
+    border-radius: 12px;
+    transition: 0.8s;
+}
+
+.apoio_logo:hover {
+    background-color: white;
+    box-shadow: 4px 4px black;
+}
+
+.rodape_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ol_sugestao {
+    display: flex;
+}
+
+.form_sugestao {
+    display: flex;
+    flex-direction: column;
+}
+
+#sugestao {
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.btn_sugestao {
+    margin-top: 5px;
+    background-color: SpringGreen;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn_sugestao:hover {
+    scale: 1.1;
+    opacity: 0.8;
+}
+
+.ol_map {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.map_icon {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.map_img {
+    height: 240px;
+    border-radius: 12px;
+    transition: 0.8s;
+    margin-bottom: 15px;
+}
+
+.map_img:hover {
+    scale: 1.1;
+    box-shadow: 4px -4px 10px black;
+    opacity: 0.8;
+}
+
+.copyright {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #5d693c;
+}
+
+.rodape_linguagem {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+#html {
+    color: black;
+    background-color: darkorange;
+}
+
+#css {
+    color: white;
+    background-color: blue;
+}
+
+#js {
+    color: black;
+    background-color: yellow;
+}
+
+
+
+@media screen and (max-width: 785px) {
+    .rodape_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .sobre_p {
+        width: 600px;
+    }
+
+    .foto {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+        height: 350px;
+        position: relative;
+        background-color: #cbc895;
+        border-radius: 12px;
+        box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        width: 600px;
+        height: 300px;
+    }
+
+    .card .img_box {
+        position: absolute;
+        width: 350px;
+        height: auto;
+        top: 0px;
+        transition: 0.5s;
+    }
+
+    .card:hover .img_box {
+        top: -100px;
+        scale: 0.7;
+    }
+
+    .card .img_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .card_content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        padding: 0px 30px;
+        text-align: center;
+        height: 30px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .card:hover .card_content {
+        /* top: 130px; */
+        top: 100px;
+        left: 100px;
+        height: 250px;
+        width: 500px;
+    }
+
+    .card_content p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .rodape_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .sobre_p {
+        width: 400px;
+    }
+
+    .foto {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 350px;
+        position: relative;
+        background-color: #cbc895;
+        border-radius: 12px;
+        box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        width: 500px;
+        height: 300px;
+    }
+
+    .card .img_box {
+        position: absolute;
+        width: 350px;
+        height: auto;
+        top: 0px;
+        transition: 0.5s;
+    }
+
+    .card:hover .img_box {
+        top: -100px;
+        scale: 0.7;
+    }
+
+    .card .img_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .card_content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        padding: 0px 30px;
+        text-align: center;
+        height: 30px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .card:hover .card_content {
+        /* top: 130px; */
+        top: 100px;
+        left: 28px;
+        height: 250px;
+        width: 500px;
+    }
+
+    .card_content p {
+        font-size: medium;
+    }
+}
