@@ -63,13 +63,14 @@ a:hover {
 }
 
 .foto {
-    background-image: url(https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-
-    height: 750px;
+    background-image: url(https://img.freepik.com/fotos-gratis/uma-xicara-de-cafe-branca-com-uma-colher-com-um-cafe-no-fundo_157027-4127.jpg?t=st=1714770550~exp=1714774150~hmac=13be661683e0a54ca10e5b9bc47cd177d267c8f18dd50e43076c8b1c1bb4bc10&w=1800);
+    background-size: cover;
+    object-fit: cover;
+    height: 900px;
 }
 
 .sobre_section {
-    background-image: url(https://media.discordapp.net/attachments/843168555360583711/1229233918709071882/Coffee-Beans-PNG-File.png?ex=662ef04c&is=661c7b4c&hm=01916d16efd95bdcc442b1f9171a43ec5ac979a2e1af0c3fda9e82bf826f048e&=&format=webp&quality=lossless&width=550&height=269);
+    background-image: url(https://media.discordapp.net/attachments/843168555360583711/1229233918709071882/Coffee-Beans-PNG-File.png?ex=663587cc&is=6634364c&hm=cc5d97c0347bb655935a3915903007082d70b0048770662fb18aedf210035cb9&=&format=webp&quality=lossless&width=550&height=269);
     background-repeat: repeat-x;
     background-position: top;
     display: flex;

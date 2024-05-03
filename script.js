@@ -20,5 +20,5 @@ function cafe7(imagem) {
     imagem.src = "https://www.nescafe.com/pt/sites/default/files/2023-08/Nes_Web3_Article_Header_Macchiato_1448x1240.png"
 }
 function cafe8(imagem) {
-    imagem.src = "https://media.discordapp.net/attachments/843168555360583711/1229233961054634074/png-clipart-latte-macchiato-coffee-cafe-caffe-macchiato-coffee-latte-removebg-preview.png?ex=662ef056&is=661c7b56&hm=24983f4ae8483a871909fd580c32078e17cda646651de95d78a17a1a29629702&=&format=webp&quality=lossless"
+    imagem.src = "https://media.discordapp.net/attachments/843168555360583711/1229233961054634074/png-clipart-latte-macchiato-coffee-cafe-caffe-macchiato-coffee-latte-removebg-preview.png?ex=663587d6&is=66343656&hm=6f598eb8b1de9f4b4b9f43fee5460f0c7a1e6627d3afb2d4f7baf40442679ee6&=&format=webp&quality=lossless"
 }
