@@ -25,11 +25,11 @@ body {
 }
 
 .logo {
-    color: white;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 nav {
     font-size: 20px;
@@ -63,16 +63,16 @@ a:hover {
 }
 
 .foto {
-    background-image: url(https://img.freepik.com/fotos-gratis/uma-xicara-de-cafe-branca-com-uma-colher-com-um-cafe-no-fundo_157027-4127.jpg?t=st=1714770550~exp=1714774150~hmac=13be661683e0a54ca10e5b9bc47cd177d267c8f18dd50e43076c8b1c1bb4bc10&w=1800);
+    background-image: url(img/img1.jpg);
     background-size: cover;
     object-fit: cover;
     height: 900px;
 }
 
 .sobre_section {
-    background-image: url(https://media.discordapp.net/attachments/843168555360583711/1229233918709071882/Coffee-Beans-PNG-File.png?ex=663587cc&is=6634364c&hm=cc5d97c0347bb655935a3915903007082d70b0048770662fb18aedf210035cb9&=&format=webp&quality=lossless&width=550&height=269);
+    background-image: url(img/img2.png);
     background-repeat: repeat-x;
-    background-position: top;
+    background-position: top left;
     display: flex;
     justify-content: center;
 }
@@ -307,9 +307,98 @@ a:hover {
     background-color: yellow;
 }
 
+/* MEDIA QUERY */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    /* CABEEÇALHO */
+    .logo img {
+        width: 100%;
+    }
 
 
-@media screen and (max-width: 785px) {
+    .rodape_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .sobre_p {
+        width: 340px;
+    }
+
+    .foto {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 350px;
+        position: relative;
+        background-color: #cbc895;
+        border-radius: 12px;
+        box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+        transition: 0.5s;
+    }
+
+    .card:hover {
+        width: 500px;
+        height: 300px;
+    }
+
+    .card .img_box {
+        position: absolute;
+        width: 350px;
+        height: auto;
+        top: 0px;
+        transition: 0.5s;
+    }
+
+    .card:hover .img_box {
+        top: -100px;
+        scale: 0.7;
+    }
+
+    .card .img_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card .card_content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        padding: 0px 30px;
+        text-align: center;
+        height: 30px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .card:hover .card_content {
+        /* top: 130px; */
+        top: 100px;
+        left: 28px;
+        height: 250px;
+        width: 500px;
+    }
+
+    .card_content p {
+        font-size: medium;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+    
+
+    /* RODAPÉ */
     .rodape_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -388,81 +477,3 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 537px) {
-    .rodape_content {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-    }
-
-    .sobre_p {
-        width: 400px;
-    }
-
-    .foto {
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 450px;
-        height: 350px;
-        position: relative;
-        background-color: #cbc895;
-        border-radius: 12px;
-        box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
-        transition: 0.5s;
-    }
-
-    .card:hover {
-        width: 500px;
-        height: 300px;
-    }
-
-    .card .img_box {
-        position: absolute;
-        width: 350px;
-        height: auto;
-        top: 0px;
-        transition: 0.5s;
-    }
-
-    .card:hover .img_box {
-        top: -100px;
-        scale: 0.7;
-    }
-
-    .card .img_box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .card .card_content {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        position: absolute;
-        top: 150px;
-        width: 100%;
-        padding: 0px 30px;
-        text-align: center;
-        height: 30px;
-        overflow: hidden;
-        transition: 0.5s;
-    }
-
-    .card:hover .card_content {
-        /* top: 130px; */
-        top: 100px;
-        left: 28px;
-        height: 250px;
-        width: 500px;
-    }
-
-    .card_content p {
-        font-size: medium;
-    }
-}
